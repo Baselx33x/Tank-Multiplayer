@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4535882333831792890}
   - component: {fileID: 6823067492830736056}
-  - component: {fileID: 2877433979032939178}
+  - component: {fileID: 664731112934404353}
   m_Layer: 7
   m_Name: Tower Pivot
   m_TagString: Untagged
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2877433979032939178
+--- !u!114 &664731112934404353
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 333605010805280914}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Script: {fileID: 11500000, guid: 943282965cb58c74dab47b0f98ede387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SyncPositionX: 0
@@ -127,7 +127,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2978598227871928483}
   - component: {fileID: 6426722524365772932}
-  - component: {fileID: 8594876326407330616}
+  - component: {fileID: 2644717107855812722}
   m_Layer: 7
   m_Name: PlayerTank
   m_TagString: Untagged
@@ -174,7 +174,7 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
---- !u!114 &8594876326407330616
+--- !u!114 &2644717107855812722
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1101231198041153775}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Script: {fileID: 11500000, guid: 943282965cb58c74dab47b0f98ede387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SyncPositionX: 1
@@ -465,8 +465,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9168831415723558641}
-  - component: {fileID: 3251818796485895189}
   - component: {fileID: 6923986158175121604}
+  - component: {fileID: 6803878005426031725}
   m_Layer: 7
   m_Name: TrackBody
   m_TagString: Untagged
@@ -491,36 +491,6 @@ Transform:
   - {fileID: 4071096432111964547}
   m_Father: {fileID: 2978598227871928483}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3251818796485895189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4863791437346957289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 0
-  SyncPositionY: 0
-  SyncPositionZ: 0
-  SyncRotAngleX: 0
-  SyncRotAngleY: 0
-  SyncRotAngleZ: 1
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  UseQuaternionSynchronization: 0
-  UseQuaternionCompression: 0
-  UseHalfFloatPrecision: 0
-  InLocalSpace: 0
-  Interpolate: 1
-  SlerpPosition: 0
 --- !u!61 &6923986158175121604
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -566,6 +536,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.099595, y: 2.1247761}
   m_EdgeRadius: 0
+--- !u!114 &6803878005426031725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4863791437346957289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 943282965cb58c74dab47b0f98ede387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SyncPositionX: 0
+  SyncPositionY: 0
+  SyncPositionZ: 0
+  SyncRotAngleX: 0
+  SyncRotAngleY: 0
+  SyncRotAngleZ: 1
+  SyncScaleX: 0
+  SyncScaleY: 0
+  SyncScaleZ: 0
+  PositionThreshold: 0.001
+  RotAngleThreshold: 0.01
+  ScaleThreshold: 0.01
+  UseQuaternionSynchronization: 0
+  UseQuaternionCompression: 0
+  UseHalfFloatPrecision: 0
+  InLocalSpace: 0
+  Interpolate: 1
+  SlerpPosition: 0
 --- !u!1 &7236404381203136857
 GameObject:
   m_ObjectHideFlags: 0
