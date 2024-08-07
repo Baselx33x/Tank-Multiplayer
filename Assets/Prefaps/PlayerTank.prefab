@@ -178,7 +178,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
@@ -248,7 +248,6 @@ MonoBehaviour:
   m_TankBody: {fileID: 9168831415723558641}
   m_TankMuzzle: {fileID: 4535882333831792890}
   m_Rb: {fileID: 5562022286761610944}
-  m_Light: {fileID: 7563790858573125844}
   m_MovementVector: {x: 0, y: 0}
   m_MovementSpeed: 2
   m_TurningSpeed: 200
