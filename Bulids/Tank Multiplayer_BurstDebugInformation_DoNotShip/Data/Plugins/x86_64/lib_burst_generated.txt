@@ -14,8 +14,8 @@ Library: C:\Users\BaselX\Documents\GitHub\Tank Multiplayer Game Unity\Tank Multi
 --assembly-defines=Unity.Networking.Transport;
 --assembly-defines=Unity.VisualScripting.Flow;
 --assembly-defines=Unity.Netcode.Components;
---assembly-defines=Unity.Netcode.Runtime;
 --assembly-defines=Unity.Collections;
+--assembly-defines=Unity.Netcode.Runtime;
 --assembly-defines=Unity.2D.SpriteShape.Runtime;
 --assembly-defines=Unity.2D.PixelPerfect;
 --assembly-defines=Unity.TextMeshPro;
@@ -168,8 +168,8 @@ Library: C:\Users\BaselX\Documents\GitHub\Tank Multiplayer Game Unity\Tank Multi
 --assembly-defines=Unity.Networking.Transport;
 --assembly-defines=Unity.VisualScripting.Flow;
 --assembly-defines=Unity.Netcode.Components;
---assembly-defines=Unity.Netcode.Runtime;
 --assembly-defines=Unity.Collections;
+--assembly-defines=Unity.Netcode.Runtime;
 --assembly-defines=Unity.2D.SpriteShape.Runtime;
 --assembly-defines=Unity.2D.PixelPerfect;
 --assembly-defines=Unity.TextMeshPro;
