@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
 
     [SerializeField] float m_LifeTime = 4f;
     [SerializeField] float m_BulletSpeed = 10f;
-   
+
     void Start()
     {
         Destroy(gameObject, m_LifeTime);

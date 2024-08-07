@@ -26,13 +26,7 @@ public class PlayerMovement : NetworkBehaviour
         m_MovementVector = InputVector;
     }
 
-    private void OnPrimaryFire(bool IsFiering)
-    {
-       if (IsFiering)
-        {
-            Debug.Log("Primary Fire !!!!");
-        }
-    }
+
 
     public override void OnNetworkSpawn()
     {
@@ -41,7 +35,6 @@ public class PlayerMovement : NetworkBehaviour
         if (!IsOwner) return;
 
         m_InputReader.onMove += OnMove;
-        m_InputReader.onPrimaryFire += OnPrimaryFire;
     }
 
    
@@ -52,7 +45,6 @@ public class PlayerMovement : NetworkBehaviour
         if (!IsOwner) return;
 
         m_InputReader.onMove -= OnMove;
-        m_InputReader.onPrimaryFire -= OnPrimaryFire;
     }
    
 

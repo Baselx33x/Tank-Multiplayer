@@ -33,6 +33,7 @@ Transform:
   m_Children:
   - {fileID: 7804796005993767751}
   - {fileID: 3240880608296270345}
+  - {fileID: 5039350725360687007}
   m_Father: {fileID: 2978598227871928483}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6823067492830736056
@@ -130,6 +131,7 @@ GameObject:
   - component: {fileID: 6426722524365772932}
   - component: {fileID: 2644717107855812722}
   - component: {fileID: 286195623864111116}
+  - component: {fileID: 6234371701884559665}
   m_Layer: 7
   m_Name: PlayerTank
   m_TagString: Untagged
@@ -251,6 +253,55 @@ MonoBehaviour:
   m_MovementVector: {x: 0, y: 0}
   m_MovementSpeed: 2
   m_TurningSpeed: 200
+--- !u!114 &6234371701884559665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101231198041153775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3912500c5bd5ea34a873972bba610286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InputReader: {fileID: 11400000, guid: 745335694f9411040b7810a8d90d33ad, type: 2}
+  m_ServerProjectilePrefab: {fileID: 5985539229343821110, guid: 98848fba75cf9484fb00734448b3699a, type: 3}
+  m_ClientProjectilePrefab: {fileID: 1276997450686576603, guid: 814eaf6510d9771489f72de1febe014c, type: 3}
+  m_FirePoint: {fileID: 5039350725360687007}
+  m_ProjectileSpeed: 10
+  m_FireRate: 2
+--- !u!1 &2315982949793253251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5039350725360687007}
+  m_Layer: 7
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5039350725360687007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2315982949793253251}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.61, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4535882333831792890}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3834161482073587901
 GameObject:
   m_ObjectHideFlags: 0
