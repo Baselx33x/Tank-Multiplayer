@@ -22,9 +22,21 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         
-        Debug.Log(collision.gameObject.name);
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("Bullet hit player");
+            var Player = collision.gameObject; 
+            if (Player != null)
+            {
+                var Health = Player.GetComponent<Health>();
+                Health.TakeDamage(10f);
 
+                Debug.Log("Player Health: " + Health.m_Health.Value);
 
-        Destroy(gameObject);
+            }
+        
+        }
+
+            Destroy(gameObject);
     }
 }

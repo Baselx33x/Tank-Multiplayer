@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Netcode;
@@ -10,6 +11,7 @@ public class LanchProjectail : NetworkBehaviour
     [SerializeField] GameObject m_ServerProjectilePrefab;
     [SerializeField] GameObject m_ClientProjectilePrefab;
     [SerializeField] Transform m_FirePoint;
+    [SerializeField] Health m_Health;
 
 
     [Header("Settings")]
@@ -45,7 +47,9 @@ public class LanchProjectail : NetworkBehaviour
         if (!IsOwner) return;
 
         m_InputReader.onPrimaryFire += OnFire;
+        m_Health.OnDead += () => { Destroy(gameObject); };
     }
+
 
 
     public override void OnNetworkDespawn()
@@ -61,7 +65,7 @@ public class LanchProjectail : NetworkBehaviour
     {
         
         m_EnableFire = IsFiring;
-        Debug.Log( "Firing !!" + m_EnableFire.ToString() );
+
     }
 
 

@@ -7,12 +7,11 @@ using UnityEngine;
 public class Health : NetworkBehaviour
 {
     public float m_MaxHealth = 100f;
-    
-    public Action<Health> OnDead;
+    public event Action OnDead;
+    public NetworkVariable<float > m_Health = new NetworkVariable<float >();
 
 
     private bool m_IsDead = false;
-    private NetworkVariable<float > m_Health = new NetworkVariable<float >();
 
     public override void OnNetworkSpawn()
     {
@@ -33,6 +32,8 @@ public class Health : NetworkBehaviour
 
     private void HandlHealth (float value)
     {
+        if (!IsServer) return;
+
         if (m_IsDead) return;
 
         float newHealth = m_Health.Value + value;
@@ -41,7 +42,7 @@ public class Health : NetworkBehaviour
 
         if (m_Health.Value <= 0f)
         {
-            OnDead?.Invoke(this);
+            OnDead?.Invoke();
             m_IsDead = true;
         }
     }
