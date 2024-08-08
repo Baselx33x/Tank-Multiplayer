@@ -10,12 +10,12 @@ public class CoinCollectabels : BaseCollectables
 
     public override void Collect()
     {
-        if (NetworkManager.Singleton.IsClient)
+        if (IsClient)
         {
             HideCollactable(true);
         } 
 
-        if (NetworkManager.Singleton.IsServer)
+        if (IsServer)
         {
             HideCollactable(false);
         }

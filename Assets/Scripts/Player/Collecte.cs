@@ -23,7 +23,7 @@ public class Collecte : NetworkBehaviour
 
                     CoinValue.Value += coin.m_CoinValue;
 
-                    Debug.Log(" ClientId : " + NetworkManager.LocalClient.ClientId + "Has Collected : " + CoinValue.Value + "Coins");
+                    Debug.Log(" ClientId : " + NetworkManager.LocalClient.ClientId + "  Has Collected : " + CoinValue.Value + "Coins");
                 }
 
             }
