@@ -10,28 +10,28 @@ public class DisplyHealthUI : NetworkBehaviour
 {
 
     [Header("References")]
-    [SerializeField] private Health m_Health;
+    [SerializeField] private Health m_HealthScript;
     [SerializeField] private Image m_Image;
 
     public override void OnNetworkSpawn()
     {
         if (!IsClient) return;
 
-        m_Health.m_Health.OnValueChanged += OnHealhtChanged;
-        OnHealhtChanged(0, m_Health.m_Health.Value);
+        m_HealthScript.m_Health.OnValueChanged += OnHealhtChanged;
+        OnHealhtChanged(0, m_HealthScript.m_Health.Value);
     }
 
     public override void OnNetworkDespawn()
     {
         if (!IsClient) return;
 
-        m_Health.m_Health.OnValueChanged -= OnHealhtChanged;
+        m_HealthScript.m_Health.OnValueChanged -= OnHealhtChanged;
     }
 
     private void OnHealhtChanged(float previousValue, float newValue)
     {
 
-        m_Image.fillAmount = (float)newValue / m_Health.m_MaxHealth;
+        m_Image.fillAmount = (float)newValue / m_HealthScript.m_MaxHealth;
     }
 
 

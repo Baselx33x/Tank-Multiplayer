@@ -874,7 +874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c65a8989680de6a4fa8316cd18572304, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Health: {fileID: 4300230524952632217}
+  m_HealthScript: {fileID: 4300230524952632217}
   m_Image: {fileID: 659763481689798658}
 --- !u!1 &6905033668904057161
 GameObject:

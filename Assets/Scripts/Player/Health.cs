@@ -44,6 +44,9 @@ public class Health : NetworkBehaviour
         {
             OnDead?.Invoke();
             m_IsDead = true;
+
+            Debug.Log("NetworkManager.LocalClient =  " + NetworkManager.LocalClient.ClientId + "  ::: " + "Dead");
+            Destroy(gameObject);
         }
     }
 

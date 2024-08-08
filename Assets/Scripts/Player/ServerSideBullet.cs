@@ -8,12 +8,8 @@ public class ServerSideBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-  
-    
-     
         if (collision.gameObject.name == "TrackBody")
         {
-            Debug.Log("Bullet hit player");
 
             var Player = collision.gameObject;
             if (Player != null)
@@ -21,7 +17,7 @@ public class ServerSideBullet : MonoBehaviour
                 var Health = Player.GetComponentInParent<Health>();
                 Health.TakeDamage(10f);
 
-                Debug.Log("Player Health: " + Health.m_Health.Value);
+                //Debug.Log("Player Health: " + Health.m_Health.Value);
 
             }
 
