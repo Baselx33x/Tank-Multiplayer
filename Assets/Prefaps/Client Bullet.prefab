@@ -132,11 +132,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4110343649366382266, guid: 98848fba75cf9484fb00734448b3699a, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 951099334
+      objectReference: {fileID: 0}
     - target: {fileID: 5985539229343821110, guid: 98848fba75cf9484fb00734448b3699a, type: 3}
       propertyPath: m_Name
       value: Client Bullet
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2070576784317932531, guid: 98848fba75cf9484fb00734448b3699a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1599206412751789410, guid: 98848fba75cf9484fb00734448b3699a, type: 3}
