@@ -13,6 +13,8 @@ public class DisplyHealthUI : NetworkBehaviour
     [SerializeField] private Health m_HealthScript;
     [SerializeField] private Image m_Image;
 
+    
+
     public override void OnNetworkSpawn()
     {
         if (!IsClient) return;
