@@ -7,9 +7,11 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
 
+
     [SerializeField] Button m_ServerButton;
     [SerializeField] Button m_HostButton;
     [SerializeField] Button m_ClientButton;
+
 
 
     private void Awake()
